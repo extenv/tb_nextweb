@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class TenderModel extends Model
 {
     protected $table            = 'tender';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'tender_id ';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
