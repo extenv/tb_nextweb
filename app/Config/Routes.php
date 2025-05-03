@@ -17,12 +17,12 @@ $routes->post('/vendor/update/(:num)', 'Vendor::update/$1');
 $routes->get('/vendor/delete/(:num)', 'Vendor::delete/$1');
 
 // ke halaman tender
-$routes->get('/tender', 'Tender::index');
-$routes->get('/tender/create', 'Tender::create');
-$routes->post('/tender/store', 'Tender::store');
-$routes->get('/tender/edit/(:num)', 'Tender::edit/$1');
-$routes->post('/tender/update/(:num)', 'Tender::update/$1');
-$routes->get('/tender/delete/(:num)', 'Tender::delete/$1');
+$routes->get('/tender', 'TenderController::index');
+$routes->get('/tender/create', 'TenderController::create');
+$routes->post('/tender/store', 'TenderController::store');
+$routes->get('/tender/edit/(:num)', 'TenderController::edit/$1');
+$routes->post('/tender/update/(:num)', 'TenderController::update/$1');
+$routes->get('/tender/delete/(:num)', 'TenderController::delete/$1');
 
 //ke halaman Kategori_Tender
 $routes->get('/kategori_tender', 'KategoriTender::index');
