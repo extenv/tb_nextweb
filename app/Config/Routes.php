@@ -9,12 +9,12 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 // ke halaman vendor
-$routes->get('/vendor', 'Vendor::index');
-$routes->get('/vendor/create', 'Vendor::create');
-$routes->post('/vendor/store', 'Vendor::store');
-$routes->get('/vendor/edit/(:num)', 'Vendor::edit/$1');
-$routes->post('/vendor/update/(:num)', 'Vendor::update/$1');
-$routes->get('/vendor/delete/(:num)', 'Vendor::delete/$1');
+$routes->get('/vendor', 'Master\VendorController::index'); // Menampilkan halaman index vendor
+$routes->get('/vendor/create', 'Master\VendorController::create'); // Menampilkan halaman create vendor
+$routes->post('/vendor/store', 'Master\VendorController::store');
+$routes->get('/vendor/edit/(:num)', 'Master\VendorController::edit/$1');
+$routes->post('/vendor/update/(:num)', 'Master\VendorController::update/$1');
+$routes->get('/vendor/delete/(:num)', 'Master\VendorController::delete/$1');
 
 // ke halaman tender
 $routes->get('/tender', 'Master\TenderController::index'); // Menampilkan halaman index tender

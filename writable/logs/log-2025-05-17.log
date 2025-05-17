@@ -1,0 +1,290 @@
+CRITICAL - 2025-05-17 07:40:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "master/vendor/index.php"
+[Method: GET, Route: vendor]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('master/vendor/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('master/vendor/index', [], true)
+ 3 APPPATH\Controllers\Master\VendorController.php(21): view('master/vendor/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 07:41:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "master/vendor/index.php"
+[Method: GET, Route: vendor]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('master/vendor/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('master/vendor/index', [], true)
+ 3 APPPATH\Controllers\Master\VendorController.php(21): view('master/vendor/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 07:47:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Master/VendorForm.php"
+[Method: GET, Route: vendor/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Master/VendorForm.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/VendorForm', [], true)
+ 3 APPPATH\Controllers\Master\VendorController.php(21): view('Master/VendorForm')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-17 07:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 07:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 07:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 07:57:25 --> ErrorException: Undefined array key "kontak"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 83.
+ 1 APPPATH\Views\Master\Vendor.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kontak"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 07:58:10 --> ErrorException: Undefined array key "email"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 83.
+ 1 APPPATH\Views\Master\Vendor.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 83)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-17 07:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 08:01:29 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\VendorModel"
+[Method: POST, Route: vendor/store]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\VendorModel')
+ 2 SYSTEMPATH\BaseModel.php(824): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Master\VendorController.php(38): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:03:38 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\VendorModel"
+[Method: POST, Route: vendor/store]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\VendorModel')
+ 2 SYSTEMPATH\BaseModel.php(824): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Master\VendorController.php(37): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-17 08:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 08:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 08:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 08:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 08:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 08:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 08:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-17 08:27:25 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 35.
+ 1 APPPATH\Views\Master\Vendor.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:27:26 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 35.
+ 1 APPPATH\Views\Master\Vendor.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:28:10 --> ErrorException: Undefined array key "alamat_vendor"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 36.
+ 1 APPPATH\Views\Master\Vendor.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alamat_vendor"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:28:29 --> ErrorException: Undefined array key "telepon"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 37.
+ 1 APPPATH\Views\Master\Vendor.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "telepon"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:28:38 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 38.
+ 1 APPPATH\Views\Master\Vendor.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:28:40 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 38.
+ 1 APPPATH\Views\Master\Vendor.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:28:41 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 38.
+ 1 APPPATH\Views\Master\Vendor.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:30:34 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 38.
+ 1 APPPATH\Views\Master\Vendor.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:31:08 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 36.
+ 1 APPPATH\Views\Master\Vendor.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:34:58 --> ErrorException: Undefined array key "email"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 35.
+ 1 APPPATH\Views\Master\Vendor.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:35:12 --> ErrorException: Undefined array key "email"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 33.
+ 1 APPPATH\Views\Master\Vendor.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-05-17 08:35:16 --> ErrorException: Undefined array key "email"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 33.
+ 1 APPPATH\Views\Master\Vendor.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-17 08:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-17 08:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
