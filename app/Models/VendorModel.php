@@ -12,10 +12,8 @@ class VendorModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [
-        'nama_vendor',
-        'alamat',
-    ];
+    protected $allowedFields = ['nama_vendor', 'alamat', 'created_at', 'updated_at'];
+
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

@@ -9,12 +9,22 @@ use App\Models\VendorModel; //fetch model vendor
 class VendorController extends BaseController
 {
     public function index()
-    {
-        // Logic to get all vendor data and pass it to the view
-        $vendorModel = new VendorModel();
-        $data['vendors'] = $vendorModel->findAll(); // Fetch all vendor data
-        return view('Master/Vendor', $data);
+{
+    $vendorModel = new VendorModel();
+
+    // Ambil kata kunci pencarian jika ada
+    $search = $this->request->getGet('search');
+
+    if ($search) {
+        $vendorModel->like('nama_vendor', $search);
     }
+
+    // Ambil data vendor dengan pagination (10 per halaman)
+    $data['vendors'] = $vendorModel->paginate(10);
+    $data['pager'] = $vendorModel->pager;
+
+    return view('Master/Vendor', $data);
+}
 
     public function create()
     {
@@ -77,4 +87,5 @@ class VendorController extends BaseController
         $vendorModel->delete($id);
         return redirect()->to('/vendor')->with('success', 'Vendor deleted successfully!');
     }
+    
 }
