@@ -1,0 +1,547 @@
+DEBUG - 2025-06-15 03:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 03:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 03:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 03:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 03:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 03:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 03:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 04:09:17 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\PengajuanTenderModel::getWithJoins
+[Method: GET, Route: pengajuan]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PengajuanTenderController.php(19): CodeIgniter\Model->__call('getWithJoins', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 04:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 04:15:53 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\PengajuanTenderModel::getWithJoins
+[Method: GET, Route: pengajuan]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PengajuanTenderController.php(19): CodeIgniter\Model->__call('getWithJoins', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 04:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 04:20:24 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: pengajuan/create]
+in SYSTEMPATH\BaseModel.php on line 1834.
+ 1 SYSTEMPATH\BaseModel.php(1834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(809): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\PengajuanTenderController.php(37): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 04:20:46 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: pengajuan/create]
+in SYSTEMPATH\BaseModel.php on line 1834.
+ 1 SYSTEMPATH\BaseModel.php(1834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(809): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\PengajuanTenderController.php(37): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 04:21:44 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: pengajuan/create]
+in SYSTEMPATH\BaseModel.php on line 1834.
+ 1 SYSTEMPATH\BaseModel.php(1834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(809): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\PengajuanTenderController.php(37): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 04:21:49 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: pengajuan/create]
+in SYSTEMPATH\BaseModel.php on line 1834.
+ 1 SYSTEMPATH\BaseModel.php(1834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(809): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\PengajuanTenderController.php(37): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 04:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 04:31:08 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: pengajuan/create]
+in SYSTEMPATH\BaseModel.php on line 1834.
+ 1 SYSTEMPATH\BaseModel.php(1834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(809): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\PengajuanTenderController.php(37): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 04:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 04:39:38 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: GET, Route: pengajuan/create]
+in SYSTEMPATH\BaseModel.php on line 1834.
+ 1 SYSTEMPATH\BaseModel.php(1834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(809): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\PengajuanTenderController.php(37): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 04:54:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "FromPengajuanTender.php"
+[Method: GET, Route: pengajuan/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FromPengajuanTender.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FromPengajuanTender', [], true)
+ 3 APPPATH\Controllers\PengajuanTenderController.php(44): view('FromPengajuanTender', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 04:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 04:54:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "FromPengajuanTender.php"
+[Method: GET, Route: pengajuan/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FromPengajuanTender.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FromPengajuanTender', [], true)
+ 3 APPPATH\Controllers\PengajuanTenderController.php(44): view('FromPengajuanTender', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 04:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 04:57:32 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(44): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 04:57:37 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(44): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:00:15 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:00:17 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:00:18 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:00:18 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:00:24 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 05:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 05:01:06 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:02:19 --> ErrorException: Undefined array key "id_vendor"
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 84.
+ 1 APPPATH\Views\FormPengajuanTender.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_vendor"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:03:29 --> ErrorException: Undefined variable $tender
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 93.
+ 1 APPPATH\Views\FormPengajuanTender.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tender', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:03:55 --> ErrorException: Undefined variable $tender
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 93.
+ 1 APPPATH\Views\FormPengajuanTender.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tender', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:04:20 --> ErrorException: Undefined variable $tender
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 93.
+ 1 APPPATH\Views\FormPengajuanTender.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tender', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:05:25 --> ErrorException: Undefined variable $tender
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 93.
+ 1 APPPATH\Views\FormPengajuanTender.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tender', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:05:27 --> ErrorException: Undefined variable $tender
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 93.
+ 1 APPPATH\Views\FormPengajuanTender.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tender', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:06:05 --> ErrorException: Undefined variable $tender
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 93.
+ 1 APPPATH\Views\FormPengajuanTender.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tender', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+CRITICAL - 2025-06-15 05:06:07 --> ErrorException: Undefined variable $tender
+[Method: GET, Route: pengajuan/create]
+in APPPATH\Views\FormPengajuanTender.php on line 93.
+ 1 APPPATH\Views\FormPengajuanTender.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tender', 'C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php', 93)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\FormPengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormPengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(41): view('FormPengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 05:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 05:25:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "FormEditPengajuanTender.php"
+[Method: GET, Route: pengajuan/edit/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FormEditPengajuanTender.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('FormEditPengajuanTender', [], true)
+ 3 APPPATH\Controllers\PengajuanTenderController.php(86): view('FormEditPengajuanTender', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->edit('3')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 05:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 05:34:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: pengajuan/update]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1031): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\PengajuanTenderController.php(94): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 05:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 05:34:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: pengajuan/update]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1031): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\PengajuanTenderController.php(94): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 05:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 05:36:46 --> ErrorException: Undefined variable $pengajuan
+[Method: GET, Route: pengajuan]
+in APPPATH\Views\PengajuanTender.php on line 198.
+ 1 APPPATH\Views\PengajuanTender.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengajuan', 'C:\\Kampus\\tb_nextweb\\app\\Views\\PengajuanTender.php', 198)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\PengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('PengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(26): view('PengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 05:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 05:37:40 --> ErrorException: Undefined variable $pengajuan
+[Method: GET, Route: pengajuan]
+in APPPATH\Views\PengajuanTender.php on line 198.
+ 1 APPPATH\Views\PengajuanTender.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengajuan', 'C:\\Kampus\\tb_nextweb\\app\\Views\\PengajuanTender.php', 198)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\PengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('PengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(26): view('PengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 05:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 05:37:41 --> ErrorException: Undefined variable $pengajuan
+[Method: GET, Route: pengajuan]
+in APPPATH\Views\PengajuanTender.php on line 198.
+ 1 APPPATH\Views\PengajuanTender.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengajuan', 'C:\\Kampus\\tb_nextweb\\app\\Views\\PengajuanTender.php', 198)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\PengajuanTender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('PengajuanTender', [], true)
+ 5 APPPATH\Controllers\PengajuanTenderController.php(26): view('PengajuanTender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanTenderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanTenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-06-15 05:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -165,7 +165,7 @@
         <a href="/dashboard">Dashboard</a>
         <a href="/vendor" class="active">Vendor</a>
         <a href="/tender">Tender</a>
-        <a href="/produk">Produk</a>
+        <a href="/pengajuan">Pengajuan</a>
         <a href="/logout">Logout</a>
     </div>
     <div class="main-content">

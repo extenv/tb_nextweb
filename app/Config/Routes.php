@@ -39,3 +39,12 @@ $routes->post('/sertifikasi_tender/store', 'SertifikasiTender::store');
 $routes->get('/sertifikasi_tender/edit/(:num)', 'SertifikasiTender::edit/$1');
 $routes->post('/sertifikasi_tender/update/(:num)', 'SertifikasiTender::update/$1');
 $routes->get('/sertifikasi_tender/delete/(:num)', 'SertifikasiTender::delete/$1');
+
+// Routes untuk Pengajuan Tender
+$routes->get('/pengajuan', 'PengajuanTenderController::index');
+$routes->get('/pengajuan/create', 'PengajuanTenderController::create');
+$routes->post('/pengajuan/store', 'PengajuanTenderController::store');
+$routes->get('/pengajuan/edit/(:num)', 'PengajuanTenderController::edit/$1');
+$routes->post('/pengajuan/update', 'PengajuanTenderController::update');
+$routes->get('/pengajuan/delete/(:num)', 'PengajuanTenderController::delete/$1');
+
