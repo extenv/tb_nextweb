@@ -1,0 +1,331 @@
+ERROR - 2025-06-15 03:50:41 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_tb_nextweb', 3306, '', 0)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#13 {main}
+CRITICAL - 2025-06-15 03:50:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: tender]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tender`', [], false)
+ 3 SYSTEMPATH/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php')
+ERROR - 2025-06-15 03:52:48 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_tb_nextweb', 3306, '', 0)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#13 {main}
+CRITICAL - 2025-06-15 03:52:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: tender]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tender`', [], false)
+ 3 SYSTEMPATH/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php')
+ERROR - 2025-06-15 03:54:38 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_tb_nextweb', 3306, '', 0)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#13 {main}
+CRITICAL - 2025-06-15 03:54:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: tender]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tender`', [], false)
+ 3 SYSTEMPATH/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php')
+ERROR - 2025-06-15 03:54:41 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_tb_nextweb', 3306, '', 0)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/VendorController.php(23): CodeIgniter\BaseModel->paginate(10)
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/VendorController.php(23): CodeIgniter\BaseModel->paginate(10)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#13 {main}
+CRITICAL - 2025-06-15 03:54:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: vendor]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `vendor`', [], false)
+ 3 SYSTEMPATH/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Master/VendorController.php(23): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php')
+ERROR - 2025-06-15 04:31:55 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_tb_nextweb', 3306, '', 0)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#13 {main}
+CRITICAL - 2025-06-15 04:31:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: tender]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tender`', [], false)
+ 3 SYSTEMPATH/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php')
+ERROR - 2025-06-15 04:34:49 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'db_tb_nextweb', 3306, '', 0)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+#5 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/app/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+#6 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+#7 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+#8 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/macbookpro/Documents/Tb Sandy/tb_nextweb/system/rewrite.php(44): require_once('/Users/macbookp...')
+#13 {main}
+CRITICAL - 2025-06-15 04:34:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: GET, Route: tender]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tender`', [], false)
+ 3 SYSTEMPATH/Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1287): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Master/TenderController.php(23): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php')
+DEBUG - 2025-06-15 04:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 04:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 05:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-15 05:09:55 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Master/EvaluasiTender::index"
+[Method: GET, Route: evaluasi-tender]
+in SYSTEMPATH/Router/Router.php on line 496.
+ 1 SYSTEMPATH/Router/Router.php(496): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Master/EvaluasiTender::index')
+ 2 SYSTEMPATH/Router/Router.php(213): CodeIgniter\Router\Router->checkRoutes('evaluasi-tender')
+ 3 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle('evaluasi-tender')
+ 4 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Users/macbookpro/Documents/Tb Sandy/tb_nextweb/public/index.php')
+DEBUG - 2025-06-15 05:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
