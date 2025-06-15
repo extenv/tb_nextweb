@@ -1,0 +1,195 @@
+CRITICAL - 2025-05-18 08:14:56 --> ErrorException: Undefined array key "email"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 167.
+ 1 APPPATH\Views\Master\Vendor.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(16): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 08:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 08:25:26 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\TenderModel"
+[Method: POST, Route: tender/store]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\TenderModel')
+ 2 SYSTEMPATH\BaseModel.php(824): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Master\TenderController.php(38): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\TenderController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 08:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 08:44:49 --> ErrorException: Undefined array key "tanggal_mulai"
+[Method: GET, Route: tender]
+in APPPATH\Views\Master\Tender.php on line 212.
+ 1 APPPATH\Views\Master\Tender.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_mulai"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Tender.php', 212)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Tender.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Tender', [], true)
+ 5 APPPATH\Controllers\Master\TenderController.php(26): view('Master/Tender', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\TenderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\TenderController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 08:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 08:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 09:32:36 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 57.
+ 1 APPPATH\Views\Master\Vendor.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(26): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 09:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 09:33:12 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 55.
+ 1 APPPATH\Views\Master\Vendor.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(26): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 09:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 09:35:56 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 58.
+ 1 APPPATH\Views\Master\Vendor.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 5 APPPATH\Controllers\Master\VendorController.php(26): view('Master/Vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 09:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 09:36:59 --> CodeIgniter\Pager\Exceptions\PagerException: "custom_pagination" is not a valid Pager template.
+[Method: GET, Route: vendor]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('custom_pagination')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'custom_pagination')
+ 3 APPPATH\Views\Master\Vendor.php(74): CodeIgniter\Pager\Pager->links('default', 'custom_pagination')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\Kampus\\tb_nextweb\\app\\Views\\Master\\Vendor.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 7 APPPATH\Controllers\Master\VendorController.php(26): view('Master/Vendor', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 09:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 09:39:33 --> Error: Call to undefined method CodeIgniter\Pager\Pager::hasPages()
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 72.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 4 APPPATH\Controllers\Master\VendorController.php(26): view('Master/Vendor', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 09:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 09:40:11 --> Error: Call to undefined method CodeIgniter\Pager\Pager::hasPages()
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 72.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 4 APPPATH\Controllers\Master\VendorController.php(26): view('Master/Vendor', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 09:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-18 09:40:53 --> Error: Call to undefined method CodeIgniter\Pager\Pager::hasPages()
+[Method: GET, Route: vendor]
+in APPPATH\Views\Master\Vendor.php on line 76.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Master/Vendor', [], true)
+ 4 APPPATH\Controllers\Master\VendorController.php(26): view('Master/Vendor', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Master\VendorController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master\VendorController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Kampus\\tb_nextweb\\public\\index.php')
+DEBUG - 2025-05-18 09:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-18 09:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

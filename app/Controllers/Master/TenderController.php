@@ -3,53 +3,90 @@
 namespace App\Controllers\Master;
 
 use App\Controllers\BaseController;
-use CodeIgniter\HTTP\ResponseInterface;
-use App\Models\TenderModel; //fetch model tender
+use App\Models\TenderModel;
 
 class TenderController extends BaseController
 {
     public function index()
-    {
-        // Logic to get all tender data and pass it to the view
-        // For example, using a model to fetch data:
-        $tenderModel = new TenderModel();
-        $data['tenders'] = $tenderModel->findAll(); // Fetch all tender data
-        // Pass the data to the view
-        return view('Master/Tender', $data);
+{
+    $vendorModel = new TenderModel();
+    // Ambil kata kunci pencarian jika ada
+    $search = $this->request->getGet('search');
+
+    $tenderModel = new TenderModel();
+
+    if ($search) {
+        $tenderModel->like('nama_tender', $search);
     }
+
+    // Ambil data tender dengan pagination (10 per halaman)
+    $data['tenders'] = $tenderModel->paginate(10);
+    $data['pager'] = $tenderModel->pager;
+
+    return view('Master/Tender', $data);
+}
 
     public function create()
     {
-        return view('Master/TenderForm');
+        // Tampilkan form kosong untuk tambah tender
+        $data['tender'] = null;
+        return view('Master/TenderForm', $data);
     }
 
     public function store()
     {
-        // Logic to store tender data
-        return redirect()->to('/tender')->with('success', 'Tender created successfully!');
+        $tenderModel = new TenderModel();
+
+        $data = [
+            'nama_tender' => $this->request->getPost('nama_tender'),
+            'deskripsi'   => $this->request->getPost('deskripsi'),
+            'nilai_pagu'  => $this->request->getPost('nilai_pagu'),
+            'instansi'    => $this->request->getPost('instansi'),
+            'created_at'  => date('Y-m-d H:i:s'),
+            'updated_at'  => date('Y-m-d H:i:s'),
+            // Tambahkan field lain sesuai kebutuhan
+        ];
+
+        $tenderModel->insert($data);
+
+        return redirect()->to('/tender')->with('success', 'Tender berhasil ditambahkan!');
     }
 
     public function edit($id)
     {
-        // Logic to get tender data by ID and pass it to the view
         $tenderModel = new TenderModel();
-        $data['tender'] = $tenderModel->find($id); // Fetch tender data by ID
+        $data['tender'] = $tenderModel->find($id);
+
         if (!$data['tender']) {
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Tender not found');
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Tender tidak ditemukan');
         }
-        // Pass the data to the view
+
         return view('Master/TenderForm', $data);
     }
 
     public function update($id)
     {
-        // Logic to update tender data by ID
-        return redirect()->to('/tender')->with('success', 'Tender updated successfully!');
+        $tenderModel = new TenderModel();
+
+        $data = [
+            'nama_tender' => $this->request->getPost('nama_tender'),
+            'deskripsi'   => $this->request->getPost('deskripsi'),
+            'nilai_pagu'  => $this->request->getPost('nilai_pagu'),
+            'instansi'    => $this->request->getPost('instansi'),
+            'updated_at'  => date('Y-m-d H:i:s'),
+            // Tambahkan field lain sesuai kebutuhan
+        ];
+
+        $tenderModel->update($id, $data);
+
+        return redirect()->to('/tender')->with('success', 'Tender berhasil diupdate!');
     }
 
     public function delete($id)
     {
-        // Logic to delete tender data by ID
-        return redirect()->to('/tender')->with('success', 'Tender deleted successfully!');
-    }   
+        $tenderModel = new TenderModel();
+        $tenderModel->delete($id);
+
+        return redirect()->to('/tender')->with('success', 'Tender berhasil dihapus!');
+    }
 }

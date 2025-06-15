@@ -4,22 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class TenderModel extends Model
+class VendorModel extends Model
 {
-    protected $table            = 'tender';
-    protected $primaryKey       = 'tender_id ';
+    protected $table            = 'vendor';
+    protected $primaryKey       = 'vendor_id ';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [
-        'nama_tender',
-        'deskripsi',
-        'nilai_pagu',
-        'instansi',
-        'created_at',
-        'updated_at',
-    ];
+    protected $allowedFields = ['nama_vendor', 'alamat', 'created_at', 'updated_at'];
+
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
