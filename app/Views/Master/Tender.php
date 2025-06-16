@@ -10,7 +10,9 @@
 <body>
     <div class="sidebar">
         <h2>Menu</h2>
+
       <?= view('Components/menus') ?>
+
     </div>
     <div class="main-content">
         <div class="actions-bar">
