@@ -25,14 +25,21 @@ $routes->post('/tender/update/(:num)', 'Master\TenderController::update/$1');
 $routes->get('/tender/delete/(:num)', 'Master\TenderController::delete/$1');
 
 //ke halaman Kategori_Tender
-$routes->get('/kategori_tender', 'KategoriTender::index');
-$routes->get('/kategori_tender/create', 'KategoriTender::create');
-$routes->post('/kategori_tender/store', 'KategoriTender::store');
-$routes->get('/kategori_tender/edit/(:num)', 'KategoriTender::edit/$1');
-$routes->post('/kategori_tender/update/(:num)', 'KategoriTender::update/$1');
-$routes->get('/kategori_tender/delete/(:num)', 'KategoriTender::delete/$1');
+$routes->get('/kategori_tender', 'Master\KategoriTender::index');
+$routes->get('/kategori_tender/create', 'Master\KategoriTender::create');
+$routes->post('/kategori_tender/store', 'Master\KategoriTender::store');
+$routes->get('/kategori_tender/edit/(:num)', 'Master\KategoriTender::edit/$1');
+$routes->post('/kategori_tender/update/(:num)', 'Master\KategoriTender::update/$1');
+$routes->get('/kategori_tender/delete/(:num)', 'Master\KategoriTender::delete/$1');
 
 //ke halaman Sertikasi_Tender
+$routes->get('/sertifikasi_tender', 'Master\SertifikasiTender::index');
+$routes->get('/sertifikasi_tender/create', 'Master\SertifikasiTender::create');
+$routes->post('/sertifikasi_tender/store', 'Master\SertifikasiTender::store');
+$routes->get('/sertifikasi_tender/edit/(:num)', 'Master\SertifikasiTender::edit/$1');
+$routes->post('/sertifikasi_tender/update/(:num)', 'Master\SertifikasiTender::update/$1');
+$routes->get('/sertifikasi_tender/delete/(:num)', 'Master\SertifikasiTender::delete/$1');
+=======
 $routes->get('/sertifikasi_tender', 'SertifikasiTender::index');
 $routes->get('/sertifikasi_tender/create', 'SertifikasiTender::create');
 $routes->post('/sertifikasi_tender/store', 'SertifikasiTender::store');
@@ -46,3 +53,11 @@ $routes->get('evaluasi-tender/detail/(:num)', 'EvaluasiTender::show/$1');
 $routes->post('evaluasi-tender/store', 'EvaluasiTender::store');
 $routes->post('evaluasi-tender/update/(:num)', 'EvaluasiTender::update/$1');
 $routes->get('evaluasi-tender/delete/(:num)', 'EvaluasiTender::delete/$1');
+=======
+// Routes untuk Pengajuan Tender
+$routes->get('/pengajuan', 'PengajuanTenderController::index');
+$routes->get('/pengajuan/create', 'PengajuanTenderController::create');
+$routes->post('/pengajuan/store', 'PengajuanTenderController::store');
+$routes->get('/pengajuan/edit/(:num)', 'PengajuanTenderController::edit/$1');
+$routes->post('/pengajuan/update', 'PengajuanTenderController::update');
+$routes->get('/pengajuan/delete/(:num)', 'PengajuanTenderController::delete/$1');
