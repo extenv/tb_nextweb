@@ -116,11 +116,8 @@
 
 <div class="sidebar">
   <h2>Menu</h2>
-  <a href="/dashboard">Dashboard</a>
-  <a href="/vendor">Vendor</a>
-  <a href="/tender">Tender</a>
-  <a href="/pengajuan" class="active">Pengajuan</a>
-  <a href="/logout">Logout</a>
+ 
+      <?= view('Components/menus') ?>
 </div>
 
 <div class="main-content">
