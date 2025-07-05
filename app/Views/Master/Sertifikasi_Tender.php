@@ -65,12 +65,7 @@
             </table>
         </div>
 
-        <!-- Pagination -->
-        <?php if (!empty($pager)) : ?>
-            <div class="pagination">
-                <?= $pager->links() ?>
-            </div>
-        <?php endif; ?>
+  
     </div>
 </body>
 </html>

@@ -4,19 +4,19 @@ namespace App\Controllers\Master;
 
 use App\Controllers\BaseController;
 use App\Models\EvaluasiTenderModel;
+use App\Models\PengajuanTenderModel;
 
 class EvaluasiTender extends BaseController
 {
     protected $evaluasiModel;
+    protected $pengajuanModel;
 
     public function __construct()
     {
         $this->evaluasiModel = new EvaluasiTenderModel();
+        $this->pengajuanModel = new PengajuanTenderModel();
     }
 
-    /**
-     * Tampilkan semua evaluasi tender (dengan join)
-     */
     public function index()
     {
         $data['evaluasi'] = $this->evaluasiModel->getAllWithJoin();
@@ -24,23 +24,41 @@ class EvaluasiTender extends BaseController
         return view('Transaction/index', $data);
     }
 
-    /**
-     * Detail evaluasi tender berdasarkan ID
-     */
-    public function show($id)
+    public function create()
     {
-        $data['evaluasi'] = $this->evaluasiModel->getByIdWithJoin($id);
+        // Ambil semua pengajuan yang bisa ditampilkan di dropdown
+        $data['pengajuanList'] = $this->pengajuanModel
+            ->select('pengajuan_tender.pengajuan_id, vendor.nama_vendor, tender.nama_tender')
+            ->join('vendor', 'vendor.vendor_id = pengajuan_tender.vendor_id')
+            ->join('tender', 'tender.tender_id = pengajuan_tender.tender_id')
+            ->findAll();
 
-        if (!$data['evaluasi']) {
-            return redirect()->back()->with('error', 'Data evaluasi tidak ditemukan');
-        }
+        $data['evaluasi'] = null;
 
-        return view('evaluasi_tender/detail', $data);
+        return view('Transaction/evaluasi_tenderForm', $data);
     }
 
-    /**
-     * Simpan data evaluasi tender baru
-     */
+   public function show($id)
+{
+    $evaluasi = $this->evaluasiModel->getByIdWithJoin($id);
+
+    if (!$evaluasi) {
+        return redirect()->back()->with('error', 'Data evaluasi tidak ditemukan');
+    }
+
+    $pengajuanList = $this->pengajuanModel
+        ->select('pengajuan_tender.pengajuan_id, vendor.nama_vendor, tender.nama_tender')
+        ->join('vendor', 'vendor.vendor_id = pengajuan_tender.vendor_id')
+        ->join('tender', 'tender.tender_id = pengajuan_tender.tender_id')
+        ->findAll();
+
+    return view('Transaction/evaluasi_tenderForm', [
+        'evaluasi' => $evaluasi,
+        'pengajuanList' => $pengajuanList,
+    ]);
+}
+
+
     public function store()
     {
         $this->validate([
@@ -61,9 +79,26 @@ class EvaluasiTender extends BaseController
         return redirect()->to('/evaluasi-tender')->with('success', 'Data evaluasi berhasil disimpan');
     }
 
-    /**
-     * Update evaluasi tender
-     */
+    public function edit($id)
+    {
+        $evaluasi = $this->evaluasiModel->getByIdWithJoin($id);
+
+        if (!$evaluasi) {
+            return redirect()->back()->with('error', 'Data tidak ditemukan');
+        }
+
+        $pengajuanList = $this->pengajuanModel
+            ->select('pengajuan_tender.pengajuan_id, vendor.nama_vendor, tender.nama_tender')
+            ->join('vendor', 'vendor.vendor_id = pengajuan_tender.vendor_id')
+            ->join('tender', 'tender.tender_id = pengajuan_tender.tender_id')
+            ->findAll();
+
+        return view('Transaction/evaluasi_tenderForm', [
+            'evaluasi' => $evaluasi,
+            'pengajuanList' => $pengajuanList,
+        ]);
+    }
+
     public function update($id)
     {
         $this->validate([
@@ -82,9 +117,6 @@ class EvaluasiTender extends BaseController
         return redirect()->to('/evaluasi-tender')->with('success', 'Data evaluasi berhasil diperbarui');
     }
 
-    /**
-     * Hapus evaluasi tender
-     */
     public function delete($id)
     {
         $this->evaluasiModel->delete($id);

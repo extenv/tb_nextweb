@@ -49,9 +49,7 @@
                             <tr>
                                 <td><?= $vendor['vendor_id'] ?></td>
                                 <td>
-                                    <a href="/vendor/detail/<?= $vendor['vendor_id'] ?>" class="vendor-link" title="Lihat detail vendor">
-                                        <?= htmlspecialchars($vendor['nama_vendor']) ?>
-                                    </a>
+                                    <?= htmlspecialchars($vendor['nama_vendor']) ?>
                                 </td>
                                 <td><?= htmlspecialchars($vendor['alamat']) ?></td>
                                 <td><?= $vendor['created_at'] ?></td>
@@ -71,12 +69,7 @@
             </table>
         </div>
 
-        <!-- Pagination -->
-        <?php if (!empty($pager)) : ?>
-            <div class="pagination">
-                <?= $pager->links() ?>
-            </div>
-        <?php endif; ?>
+     
     </div>
 </body>
 </html>

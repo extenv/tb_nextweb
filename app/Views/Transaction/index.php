@@ -19,6 +19,9 @@
                 <form method="get" action="/evaluasi-tender" class="search-form" style="display:inline-block;">
                     <input type="text" name="search" placeholder="Cari vendor atau tender..." value="<?= htmlspecialchars($_GET['search'] ?? '') ?>" />
                 </form>
+                
+    <a href="/evaluasi-tender/create"><button class="create-btn">Tambah Evaluasi</button></a>
+
             </div>
         </div>
 
@@ -69,12 +72,7 @@
             </table>
         </div>
 
-        <!-- Pagination -->
-        <?php if (!empty($pager)) : ?>
-            <div class="pagination">
-                <?= $pager->links() ?>
-            </div>
-        <?php endif; ?>
+      
     </div>
 </body>
 </html>
